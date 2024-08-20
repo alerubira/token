@@ -1,7 +1,11 @@
 doctype html
 html
   head
+    script(src="dom.js") 
     title= title
   body
     h1 ¡Hola, Mundo!
     p Esta es mi primera aplicación usando Node.js, Express y Pug.
+    button(type='button',onclick='generar()') generar 
+    button(typte='button',onclick='paginaSecundaria()') ir pagina secundaria
+    button(type='button',onclick='paginaTercera()') ir pagina tercera
