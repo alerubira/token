@@ -42,8 +42,8 @@ function generarToken(datos) {
 
 function verificarToken(req, res, next) {
   const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
-
+  //const token = authHeader && authHeader.split(' ')[1];
+ const token = authHeader && authHeader.split(' ')[1] || req.query.token;
   if (!token) {
       return res.status(401).json({ error: 'Token no proporcionado' });
   }

@@ -44,7 +44,7 @@ async function paginaSecundaria() {
 
         // Redirigir a la página secundaria si la solicitud fue exitosa
         if (respuesta.ok) {
-           // window.location.href = '/secundaria';
+            window.location.href = `/secundaria?token=${token}`;
         }
     } catch (error) {
         console.error('Error al acceder a la página secundaria:', error);
@@ -67,7 +67,7 @@ async function paginaTercera(){
 
         // Redirigir a la página secundaria si la solicitud fue exitosa
         if (respuesta.ok) {
-           // window.location.href = '/secundaria';
+           // window.location.href = '/tercera';
         }
     } catch (error) {
         console.error('Error al acceder a la página tercera:', error);
